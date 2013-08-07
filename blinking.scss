@@ -1,0 +1,88 @@
+@-webkit-keyframes blinking {
+	0% {
+		opacity: 0;
+	}
+	49.9999% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	99.9999% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes blinking {
+	0% {
+		opacity: 0;
+	}
+	49.9999% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	99.9999% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@-o-keyframes blinking {
+	0% {
+		opacity: 0;
+	}
+	49.9999% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	99.9999% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes blinking {
+	0% {
+		opacity: 0;
+	}
+	49.9999% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	99.9999% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.blinking-blink {
+	-webkit-animation: blinking 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation: blinking 0.5s;
+	-moz-animation-iteration-count: infinite;
+	-o-animation: blinking 0.5s;
+	-o-animation-iteration-count: infinite;
+	animation: blinking 0.5s;
+	animation-iteration-count: infinite;
+}
+
+blink {
+	@extend .blinking-blink;
+	text-decoration: none;
+}
+
