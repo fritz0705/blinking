@@ -48,12 +48,16 @@ that any site which uses blinking has a browser-indepentent blinking behaviour.
 ::
 
     <blink>This is a blinking text</blink>
+    <span class="blinking-blink">This is also blinking</span>
+
+The difference is, that this also works with images and divs and videos,
+because it uses the opacity CSS property instead of a simple visibility metric.
 
 scss extend
 ~~~~~~~~~~~
 
 blinking also supports the scss `@extend` directive, it implements the CSS class
-`blinkling-blink`, and this is the way how you can use it:
+`blinking-blink`, and this is the way how you can use it:
 
 ::
 
