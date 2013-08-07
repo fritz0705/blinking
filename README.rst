@@ -65,6 +65,18 @@ blinking also supports the scss `@extend` directive, it implements the CSS class
       @extend .blinking-blink;
     }
 
+SCSS mixin
+~~~~~~~~~~
+
+blinking has also support for SCSS mixins, which means that you can customize
+the duration of an blink iteration:
+
+::
+
+    header {
+      @include blinking($duration: 0.1s);
+    }
+
 Copyright / License
 -------------------
 
